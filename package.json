@@ -49,5 +49,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "bs58": "^5.0.0",
+    "eventemitter3": "^4.0.7"
+  }
 }
