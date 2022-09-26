@@ -13,17 +13,43 @@ npm install --save qp-walletprovider
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 
-import MyComponent from 'qp-walletprovider'
-import 'qp-walletprovider/dist/index.css'
+import Wallet from 'qp-walletprovider'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const App = () => {
+  const [address, setAddress] = useState("")
+
+  let wallet = new Wallet();
+
+  const connectToWallet = () => {
+    wallet.connect().then((res) => {
+      setAddress(res)
+    })
   }
+
+  return (
+    <React.Fragment>
+      {address === "" ?
+        (
+          <button onClick={() => connectToWallet()}>
+            Connect
+          </button>
+        ) : (
+          <>
+            Address : {address}
+          </>
+        )}
+
+    </React.Fragment>
+  )
 }
+
+export default App
 ```
+
+## Function
+
 
 ## License
 
