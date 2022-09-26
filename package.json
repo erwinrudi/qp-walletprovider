@@ -1,13 +1,22 @@
 {
   "name": "qp-walletprovider",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Library to connect with qoinpay extension",
-  "author": "erwinrudi",
   "license": "MIT",
   "repository": "erwinrudi/qp-walletprovider",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "keywords": [
+    "qoinpay",
+    "react",
+    "wallet adapter"
+  ],
+  "author": {
+    "name": "Erwin Rudiyanto",
+    "email": "erwinrudiyanto@gmail.com"
+  },
+  "homepage": "https://github.com/piyushswain/react-rails-pagination",
   "engines": {
     "node": ">=10"
   },
